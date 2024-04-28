@@ -1,4 +1,5 @@
 import { Schema, model, models } from "mongoose";
+import { RequiredError } from "svix/dist/openapi/apis/baseapi";
 
 const UserSchema = new Schema({
   clerkId: { type: String, required: true, unique: true },
